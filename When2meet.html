@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When2meet</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <nav>
+        <h1>When2Meet</h1>
+        <ul>
+            <li><a href="#eventCreation">Create Event</a></li>
+            <li> <a href="#aviliabitly">Select Avilabilty</a></li>
+            <li> <a href="#results">View Results</a></li>
+            <li> <a href="#signUp">Sign up</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="eventCreation">
+    <h1>Create Event</h1>
+    <form action="">
+        <div class="left-input">
+            <label for="name">Event Name </label>
+            <input type="text" name="name">
+                <br>
+                <label for="startdate">Start Date </label>
+                <input type="date" name="startdate">
+                <br>
+                <label for="enddate">End Date </label>
+                <input type="date" name="enddate">
+
+            <div class="lower-left">
+                <label for="timeslots">Time Increment</label>
+                <select name="timeslots">
+                    <option value="15">15 minutes</option>
+                    <option value="20">20 minutes</option>
+                    <option value="25">25 minutes</option>
+                    <option value="30">30 minutes</option>
+                </select>
+                <button>Create event</button>
+            </div>
+
+        </div>
+
+        <div class="right-input">
+            <label for="description">Event Description</label>
+            <textarea name="description"></textarea>
+        </div>
+    </form>
+    </section>
+
+    <section id="aviliabitly" >
+        <h1>Input Avilabilty</h1>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednsday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="results" >
+        <h1>View Results</h1>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednsday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>3 available</td>
+                <td>2 available</td>
+                <td>4 available</td>
+                <td>1 available</td>
+                <td>5 available</td>
+            </tr>
+        </table>
+        <span>Shareable Link:</span>
+        <a href="https://www.when2meet.com/">https://www.when2meet.com/</a>
+        
+    </section>
+
+    <section id="signUp" >
+        <h1>Sign up</h1>
+        <form>
+            <div class="Signup-fields">
+                <label for="username">Username</label>
+                <input type="text" name="username">
+            </div>
+            <div  class="Signup-fields">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+            </div>
+            <div  class="Signup-fields">
+                <label for="password">password</label>
+                <input type="password" name="password">
+            </div>
+        </form>
+        <div  class="Signup-fields">
+            <button>signUp</button>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 WhenToMeet. All rights revoked by JJ.
+    </footer>
+
+</body>
+</html>
